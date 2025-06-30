@@ -1,8 +1,8 @@
-# CVTeX – CV Template in LaTeX
+# CVTeX – CV Template and Processing Workflow
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains my CV template in LaTeX.
+This repository contains my CV template (SimplyLongCV) in LuaTeX and a Makefile for transcribing the Markdown drafts into TeX, then compiling them into a PDF file.
 
 ---
 
@@ -30,3 +30,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+In addition, the CV template is derived from [Jan Küster's latexcv project](https://github.com/jankapunkt/latexcv) (Copyright (c) 2014-2021 Jan Küster) which itself is also based on the MIT licence.
