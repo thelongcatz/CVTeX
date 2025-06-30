@@ -8,7 +8,7 @@
 
 \LoadClass{article} % Use article class as base template
 \NeedsTeXFormat{LaTeX2e} % Latest LaTeX format
-\ProvidesClass{simplylongcv}[2022/07/03] % Class name and version
+\ProvidesClass{simplylongcv}[2023/05/03] % Class name and version
 
 %% Load packages
 % No indent for new paragraphs, see https://tex.stackexchange.com/a/40432
@@ -57,10 +57,14 @@
   {\LARGE\scshape{#1}} \vspace{0.5em}
 }
 
-%% Produce contact info (3 address, 2 phone (1st for tel: hyperlink, 2nd for typesetting) and 1 email fields)
-\newcommand{\contact}[6]{
+%% Add address
+\newcommand{\address}[3]{
   #1{\large\textperiodcentered}#2{\large\textperiodcentered}#3\\ \vspace{0.5em}
-  \href{tel:#4}{#5} \hspace{1.25em} \href{mailto:#6}{#6}
+}
+
+%% Produce contact info (2 phone (1st for tel: hyperlink, 2nd for typesetting) and 1 email fields)
+\newcommand{\contact}[3]{
+  \href{tel:#1}{#2} \hspace{1.25em} \href{mailto:#3}{#3}
 }
 
 %% Skill entry
